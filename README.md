@@ -1,6 +1,8 @@
 # Solovino Instances - 12/2017
 Control EC2 instances from Alexa Skills throw a Lambda in Python
 
+Autor: [Mr.Jack](https://keybase.io/mrjack)
+
 ## Step 1
 * Create a new Alexa Skill (https://developer.amazon.com/edw/home.html#/skills)
 * On your model create 3 Intents
@@ -16,7 +18,7 @@ Control EC2 instances from Alexa Skills throw a Lambda in Python
 
 ## Step 2
 * On Lambda create a new function on Python 2.7 (https://console.aws.amazon.com/lambda/home?region=us-east-1#/create)
-* Paste the code
+* Paste the [code](lambda_function.py)
 * Link your Alexa Skill with your new AWS Lambda ARN
 
 ## Step 3
@@ -32,10 +34,10 @@ Control EC2 instances from Alexa Skills throw a Lambda in Python
 * Prepare your EC2 enviroments creating 3 instances
 * Each instance must have a tag '*enviroment*' with the possible values staging, prod, dev
 
-# Step 5
+## Step 5
 * Test your Alexa Skill on the tab Test > Service Simulator
 * For a better debugging, use the JSON Service Request and create a Test Event directly on Lambda
 * If everything is ok, test with your Amazon Echo Dot by using Skills Beta Testing (it requires all the configuration steps completed)
 
-#Step 6
+## Step 6
 * **Publish!! :D**
